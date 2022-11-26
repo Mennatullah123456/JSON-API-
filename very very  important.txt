@@ -1,0 +1,64 @@
+
+
+
+Dear HR Manger
+how are you today😀
+
+The following is information about the task and the steps that I have taken
+I have completed the application required of me as I understood from the data included
+
+In fact, I was confused!
+  Do I do Todo, from the beginning, or do I use the api as you sent links to it? 
+Also, I did not understand well. Is it required in this task that I do all the work, such as delete update remove on the api, or do all of this from the beginning.
+So I made both. The first part is a complete todo list independent of the API part
+And in the API part, I just made fetch for the API using the javascript fetch function with Bootstrap 
+
+
+
+____________
+____________
+{{{{{{{{{{{task steps}}}}}}}}}}}
+____________
+____________
+1 - login && register (with full authentication)
+-----------------------------
+2 - add 3 action handling {complete - edit - remove}
+---------------------------------
+3 - add 2 action handling {
+  # -save-------save all item in localStorage
+  # -clear all ------clear all item from localStorage
+
+}
+4 - also handle number of completed task
+------------------------------
+
+
+
+____________________Tools I Used__________________
+
+1 - I Used tow (bootstrap CDN && Scss);
+2 - Data Link I Used this link (https://dummyjson.com/todos) instead of link which included Because didn't work for me
+
+
+________________Steps to work on the project_____________
+
+1 - The first step is to upload the project to github
+2 - The second step, I created a new {branch} in the name of {todo} and I made updates to the project in the continuity and uploaded them to this branch
+3 - After completing all the modifications to the project in the end, I made a {merge} for the Todo branch with the Master branch
+
+
+______________git code i use____________________
+
+1 - git init
+2 - git add .
+3 - git commit -m " test"
+4 - git push -u origin (master&& todo)
+
+
+_______________branches_________________________
+
+1 - git branch
+2 - git branch todo
+3 - git checkout (todo && master)
+4 - git merge todo
+

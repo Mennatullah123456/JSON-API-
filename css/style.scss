@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: monospace;
+  box-sizing: border-box;
+  background-image: url('../img/body_bg1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+
+}
+/* CSS VARIABLE */ 
+$main_co:#000;
+$second_co:#eee;
+$main_fs:16px;
+
+/*start overlay*/ 
+.overlay{
+position: absolute;
+top: 0;
+left:0;
+width: 100%;
+height: 100%;
+background: rgba($main_co, .7);
+z-index: -1;
+}
+/*start header*/ 
+header{
+
+  nav{
+    font-size: $main_fs - 2px;
+    padding: 10px 0;
+    border-top: 1px solid $second_co;
+    border-bottom: 1px solid $second_co;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    width: 100%;
+  }
+  .forms-block {
+    text-align: right;
+  }
+  .form {
+    display: none;
+    margin: 20px 0 10px;
+    label{
+      color:$second_co;
+    }
+  }
+  
+  span {
+    font-size:  $main_fs ;
+  }
+  span.link {
+    cursor: pointer;
+    color: $second_co;
+    word-spacing: -3px;
+    border-bottom: 1px solid transparent;
+    &:hover {
+      border-color: $second_co;
+    }
+  }
+  .hide {
+  display: none;
+}
+  .error,
+.success {
+  font-size:  $main_fs - 5px;
+}
+.success {
+  color: green;
+}
+.error {
+  color: red;
+}
+.link.-localstorage {
+  color: red;
+}
+label {
+  font-size:  $main_fs - 2px;
+}
+input,
+button {
+  margin: 5px 0;
+  padding: 5px 10px;
+  font-family: monospace;
+  font-size:  $main_fs - 4px;
+  border-radius: 3px;
+  border: 1px solid #999999;
+  background-color: #ffffff;
+}
+input {
+  min-width: 180px;
+}
+button {
+  cursor: pointer;
+  box-shadow: none;
+  transition: all .3s;
+  &:hover {
+    background-color: $main_co;
+    border-color: $main_co;
+    color: #ffffff;
+  }
+}
+
+}
+
+/*start todo section element style*/ 
+section.todo{
+  z-index: 100;
+  position: relative;
+  .parent{
+display: flex;
+flex-direction: column;
+
+  }
+  label{
+    max-width: 70%;
+    font-size: $main_fs - 3px; 
+    color:$second_co; 
+  }
+  .control{
+ 
+display: flex;
+justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @media(max-width:767px){
+      /* media for small screen*/ 
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+  .right{
+    display: flex;
+    justify-content: center;
+    align-items:center
+  }
+  input{
+    padding: 5px 10px;
+    min-width: 300px;
+    border-color:transparent;
+  }
+  h6{ 
+    color:$second_co; 
+    word-break: break-all;
+  }
+  span{
+    background-color: $main_co;
+    color:$second_co;
+    padding: 6px 14px;
+    display: grid;
+    place-items: center; 
+    font-size: $main_fs ;
+    width: 40px;
+    height: 40px;
+
+  }
+  .content{
+
+  }
+ ol{
+
+  }
+  li{ background-color:rgba($second_co, .2); padding: 10px; border-radius:15px;
+     -webkit-border-radius:15px;
+     -moz-border-radius:15px;
+      -ms-border-radius:15px;
+       -o-border-radius:15px;
+       &::marker {
+        color: rgb(0, 255, 13);
+    }
+}
+} 
+
+/*add toggle class on complete state*/ 
+.completed{
+  text-decoration: line-through; 
+  font-weight: bolder;
+  color:rgba($main_co, .2) !important;
+}
